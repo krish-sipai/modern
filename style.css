@@ -1,0 +1,594 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: museoModerno,sans-serif;
+    animation:  3s ease-in 3s ;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-color: black;
+}
+
+.first{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+   
+    
+}
+
+.first .container h1{
+    color:aliceblue;
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top:3%;
+    font-family: museoModerno,sans-serif;
+    text-shadow: 0 0 10px #efefef, 0 0 10px #efefef, 0 0 10px #efefef, 0 0 10px #efefef,0 0 10px #efefef;
+}
+
+.first .container {
+    width: 100%;
+    height: 50%;
+    
+}
+
+.first .container p{
+    color: green;
+    font-family: "Press Start 2P";
+    text-align: center;
+    text-transform: capitalize;
+    animation: 
+    typing 4s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+}
+
+
+.first .container button{
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    background-color: #efefef;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+    font-family: museoModerno,sans-serif;
+    position: relative;
+    margin-left: 45%;
+    top: 10%;
+    transition: all ease .5s;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    
+}
+
+.first .container button a{
+    text-decoration: none;
+    color: black;
+}
+.first .container button a:hover{
+    color:  #efefef;
+}
+
+.first i{
+    position: relative;
+    margin-left: 48%;
+}
+
+
+.rocket{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.roc{
+    animation: horizontal-shaking .5s infinite;;
+}
+/*  nav bar */
+.navbar{
+    background-color:transparent;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(10px);
+    border: 3px solid aliceblue;
+    border-right: 0px;
+    border-left: 0px;
+    height: 100px;
+    align-items: center;
+    
+}
+
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: museoModerno,sans-serif;
+    font-weight: lighter;
+    
+}
+
+.navbar  .middle{
+    font-weight: bolder;
+    text-shadow: 0 0 1px #efefef, 0 0 1px #efefef, 0 0 10px #efefef, 0 0 1px #efefef,0 0 1px #efefef;
+
+}
+
+    
+/* home */
+
+
+.home{
+    height: 100vh;
+    width: 100vw;
+    background-image:url('images/background.jpg') ;
+    background-color: none;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .content{
+    color: #efefef;
+    font-family: museoModerno,sans-serif;
+    background-color: transparent;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+
+.home input{
+    height: 40px;
+    width: 80%;
+    border: 1px solid aliceblue;
+    outline: 0px;
+    padding: 5px;
+    color:black;
+}
+
+.home .search{
+    width: 40%;
+    display: flex;
+    color: black;
+    
+    
+}
+
+.home button{
+    height: 40px;
+    width: 30%;
+    margin-left: -1px;
+    align-content: stretch;
+    padding: 10px;
+    color: black;
+    border: none;
+    transition: all ease .5s;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.home .subscribe{
+    border: 1px solid white;
+    padding: 5px 15px;
+    background-color: gainsboro;
+    color:black;
+    margin-top: 3%;
+    font-size: 1rem;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    transition: all ease .5s;
+    animation-name: fade-in;
+    animation-duration: 2s;
+
+
+}
+
+/* about us */
+
+.about-us{
+    height: 100vh;
+    width: 100vw;
+    background-color: #efefef;
+    background-image: url('images/aboutUs-background.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .container {
+    color: #efefef;
+    height: 70%;
+    width: 60%;
+}
+
+.about-us .container h1{
+    font-family: museoModerno,sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2% 0%;
+}
+
+.about-us .content {
+    display: flex;
+    border: 1px solid white;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+
+}
+
+.about-us .para{
+    display: flex;
+}
+
+.about-us .para .con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 100%;
+    justify-content: space-evenly;
+    border: 1px solid white;
+}
+.about-us .para p {
+    text-align:  center;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+
+.about-us .readmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    color: black;
+    width: 15%;
+    height: 20%;
+
+
+    
+}
+
+.about-us .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid white;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    background-color: #efefef;
+    transition: all ease .5s;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.about-us .buttons .box{
+    margin-top: 5%;
+    width: 80%;
+    background-color: black;
+    color: #efefef;
+    border: none;
+}
+
+/*  form */
+
+.landing-form{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #efefef;
+    
+}
+
+
+
+
+.landing-form .container{
+    width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 1px solid #efefef;
+
+}
+
+.landing-form .container h1{
+    color: white;
+    text-align: center;
+    margin-left: 5%;
+    
+    
+    
+}
+
+.landing-form form{
+   height: 60%;
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+
+   
+}
+
+.landing-form form input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid white;
+
+    padding: 1%;
+    width: 90%;
+    color: white;
+}
+
+.landing-form .box{
+    width: 90%;
+    margin-bottom: 3%;
+    width: 90%;
+}
+
+.landing-form .box p {
+    font-size: 1rem;
+    
+}
+
+.landing-form button{
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight:bold ;
+}
+
+/* subscribe */
+
+.subscribe{
+    height: 80vh;
+    width: 100vw;
+    color: #efefef;
+    display: grid;
+    place-items: center;
+    
+    
+}
+
+.subscribe .container{
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.subscribe .container h1 {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.subscribe .sub-in{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subscribe .container input {
+    background-color: transparent;
+    outline: none;
+    border:1px solid white;
+    margin-right: -2px;
+    height: 33px;
+    padding: 1%;
+    width: 50%;
+    color: white;
+
+
+}
+
+.subscribe .container button{
+    margin-left: -3px;
+    padding: 5px;
+
+}
+
+/* footer */
+
+footer{
+    height:60vh;
+    width: 100vw;
+    color: white;
+    
+
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    border: 2PX solid white;
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.boxes .box h1{ 
+    font-size: 1.5rem;
+}
+
+.boxes .box ul{
+    list-style: none;
+    text-align: center;
+    
+}
+
+.boxes .box ul a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #efefef;
+}
+
+.boxes .box .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxes .box p{
+    text-align: center;
+}
+
+.container .boxer {
+    border: 1px solid  white;
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .boxer .box a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+
+/* hovers  */
+
+
+
+.main  button:hover{
+    background-color: black;
+    border: 1px solid white;
+    color: #efefef;
+}
+.about-us .box button:hover{
+    background-color: #efefef;
+    border: 1px solid black;
+    color: black;
+}
+
+.main button {
+    transition: ease-in-out;
+}
+
+.first button:hover{
+    box-shadow: -18px -11px 127px 13px rgba(230,230,230,0.89);
+    -webkit-box-shadow: -18px -11px 127px 13px rgba(230,230,230,0.89);
+    -moz-box-shadow: -18px -11px 127px 13px rgba(230,230,230,0.89);
+}
+
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .animate-flicker {
+     -webkit-animation: flickerAnimation .5s infinite;
+     -moz-animation: flickerAnimation .5s infinite;
+     -o-animation: flickerAnimation .5s infinite;
+      animation: flickerAnimation .5s infinite;
+  }
+
+  @keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+   }
+   @keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
